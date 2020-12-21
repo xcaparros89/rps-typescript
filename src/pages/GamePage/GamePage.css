@@ -1,0 +1,33 @@
+.g-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5vh;
+}
+
+.g-container button{
+    margin: 10vh;
+    padding: 10px;
+    border: none;
+    background-color: white;
+    color: darkslateblue;
+    font-size: 1.5rem;
+    border-radius: 3px;
+}
+
+.g-container h1{
+    font-size: 3rem;
+}
+
+.scores{
+    display:flex;
+    justify-content: space-between;
+    width: 50%;
+    font-size: 1.5rem;
+}
+
+.player-hand{
+    transform: rotateY(180deg)
+}
+

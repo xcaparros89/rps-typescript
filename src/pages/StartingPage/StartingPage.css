@@ -1,0 +1,29 @@
+.s-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20vh;
+}
+
+.s-container h1{
+    font-size: 5rem;
+}
+
+.s-container button{
+    margin: 20vh;
+    padding: 10px;
+    border: none;
+    background-color: white;
+    color: darkslateblue;
+    font-size: 1.5rem;
+    border-radius: 3px;
+}
+
+.s-containerage button:hover{
+    background-color: rgb(204, 200, 200);
+}
+
+.s-container button:active{
+    background-color: dimgray;
+}
