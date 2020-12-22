@@ -1,4 +1,4 @@
-#RPS-typescript
+# RPS-typescript
 ## What is this project?
 
 Rock paper scissors game
