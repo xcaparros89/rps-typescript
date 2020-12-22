@@ -7,7 +7,7 @@ Rock paper scissors game
 
 Html, CSS, Typescript
 
-### To try it`npm start`
+### To try it
 
 Write in the console:
 - npm i
