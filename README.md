@@ -1,6 +1,7 @@
-# What is this project?
+#RPS-typescript
+## What is this project?
 
-Rock paper scissors games
+Rock paper scissors game
 
 ## Technologies used
 
