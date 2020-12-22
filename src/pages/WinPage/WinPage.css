@@ -13,3 +13,21 @@
     width: 30%;
     margin:10px;
 }
+
+.w-buttons-container button{
+    margin: 2vh;
+    padding: 10px;
+    border: none;
+    background-color: white;
+    color: darkslateblue;
+    font-size: 1.5rem;
+    border-radius: 3px;
+}
+
+.w-buttons-container button:hover{
+    background-color: rgb(204, 200, 200);
+}
+
+.w-buttons-container button:active{
+    background-color: dimgray;
+}

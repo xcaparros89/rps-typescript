@@ -10,9 +10,19 @@
     font-size: 5rem;
 }
 
-.s-container button{
-    margin: 20vh;
+.s-buttons-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:50%;
+    height:30vh;
+    margin:35px;
+}
+
+.s-buttons-container button{
+    margin: 2vh;
     padding: 10px;
+    width: 50%;
     border: none;
     background-color: white;
     color: darkslateblue;
@@ -20,10 +30,15 @@
     border-radius: 3px;
 }
 
-.s-containerage button:hover{
+.s-buttons-container button:hover{
     background-color: rgb(204, 200, 200);
 }
 
-.s-container button:active{
+.s-buttons-container button:active{
     background-color: dimgray;
+}
+
+.s-buttons-container input{
+    width:50%;
+    padding:5px;
 }

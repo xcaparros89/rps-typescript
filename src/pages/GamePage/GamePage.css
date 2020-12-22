@@ -16,6 +16,14 @@
     border-radius: 3px;
 }
 
+.g-container button:hover{
+    background-color: rgb(204, 200, 200);
+}
+
+.g-container button:active{
+    background-color: dimgray;
+}
+
 .g-container h1{
     font-size: 3rem;
 }
