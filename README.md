@@ -12,5 +12,4 @@ Html, CSS, Typescript
 Write in the console:
 - npm i
 - npm start
-Runs in the localhost 3000
-Runs the app in the development mode.\
+- Open http://localhost:3000
