@@ -4,10 +4,11 @@ import paperImg from "../../assets/paper.png";
 import scissorsImg from "../../assets/scissors.png";
 import { useHistory } from "react-router-dom";
 import './GamePage.css';
+import {IGameProps} from '../../interfaces'
 
 type rpc = "rock" | "paper" | "scissors";
 
-function GamePage(props: any) {
+function GamePage(props: IGameProps):JSX.Element {
   let history = useHistory();
   const [scoreP, setScoreP] = useState<number>(0);
   const [scoreC, setScoreC] = useState<number>(0);
@@ -54,10 +55,14 @@ function GamePage(props: any) {
       return {
         newScoreP: scoreP,
         newScoreC: scoreC + 1,
-        newResult: "Computer wins the round",
+        newResult: "The computer wins the round",
       };
     }
   };
+
+  const wAndL = (winner:[string, number],loser:[string, number]):any=>{
+    props.setWinner(winner); props.setLoser(loser)
+  }
 
   const choice = (playerChoice: rpc) => {
     let playerChoiceImg: string = assignImage(playerChoice);
@@ -81,15 +86,15 @@ function GamePage(props: any) {
     setResult(newResult);
 
     if (newScoreP === 5 || newScoreC === 5) {
-      let winner =
+      let winner:[string, number] =
         newScoreP === 5
           ? [props.playerName, newScoreP]
-          : ["Computer", newScoreC];
-      let loser =
+          : ["The computer", newScoreC];
+      let loser:[string, number] =
         newScoreP === 5
-          ? ["Computer", newScoreC]
+          ? ["the computer", newScoreC]
           : [props.playerName, newScoreP];
-      props.wAndL(winner, loser);
+      wAndL(winner, loser);
       setResult("");
       setImg({ player: [rockImg, "rock"], computer: [rockImg, "rock"] });
       setScoreP(0);
@@ -102,7 +107,7 @@ function GamePage(props: any) {
     <div className="g-container">
       <div className="scores">
         <p>{`${props.playerName}: ${scoreP}`}</p>
-        <p>{`Console: ${scoreC}`}</p>
+        <p>{`Computer: ${scoreC}`}</p>
       </div>
       <div className="g-container">
         <h1>{result}</h1>

@@ -1,8 +1,9 @@
 import React, {useState} from 'react';
 import { useHistory } from 'react-router-dom';
 import './StartingPage.css'
+import {IStartProps} from '../../interfaces'
 
-function StartingPage(props:any){
+function StartingPage(props:IStartProps):JSX.Element{
     let [name, setName] = useState<string>('Player')
     let handleChange = (e:any):void => setName(e.target.value.trim())
     let history = useHistory();

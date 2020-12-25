@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import {IWinProps} from '../../interfaces'
 import './WinPage.css'
 
-function WinPage(props:any){
+function WinPage(props:IWinProps):JSX.Element{
     return(
         <div className="w-container">
             <h1>{props.winner[0]} won the game!</h1>
